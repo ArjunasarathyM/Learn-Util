@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Practice1" Class="LINQbasicDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VALLY-PC\SQLEXPRESS;Initial Catalog=Practice1;Persist Security Info=True;User ID=sa" SettingsObjectName="BasicUtil.Properties.Settings" SettingsPropertyName="Practice1ConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ITEM" Member="ITEMs">
+    <Type Name="ITEM">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(9,3)" CanBeNull="true" />
+      <Column Name="phone" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Association Name="ITEM_testForPKFK" Member="testForPKFK" ThisKey="ID" OtherKey="num" Type="testForPKFK" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.testForPKFK" Member="testForPKFKs">
+    <Type Name="testForPKFK">
+      <Column Name="num" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="stat" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ITEM_testForPKFK" Member="ITEM" ThisKey="num" OtherKey="ID" Type="ITEM" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

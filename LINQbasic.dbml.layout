@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LINQbasic">
+  <DataContextMoniker Name="/LINQbasicDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9806e20b-1ea0-43c2-aa9d-d5f88031e802" absoluteBounds="0.75, 0.875, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/LINQbasicDataContext/ITEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43d4ce70-06a5-4d47-bd6a-c19815aa320d" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb7b0d9b-c2b8-4ecf-985f-9d93f2bcc246" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LINQbasicDataContext/testForPKFK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd307ca9-e08f-4163-892a-7cbe1166563d" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.66429768880208); (3.5 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LINQbasicDataContext/ITEM/ITEM_testForPKFK" />
+      <nodes>
+        <classShapeMoniker Id="9806e20b-1ea0-43c2-aa9d-d5f88031e802" />
+        <classShapeMoniker Id="bb7b0d9b-c2b8-4ecf-985f-9d93f2bcc246" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
