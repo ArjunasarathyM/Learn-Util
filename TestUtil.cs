@@ -69,6 +69,7 @@ namespace BasicUtil{
             }
             if (index > 0)
                 CountryCode += "+" + numberBuffer.Substring(0, index);
+            //Merge the packed set to get the formated number
             formatedNumber = CountryCode + areaCode + phoneNumber;
             return formatedNumber;
         }
