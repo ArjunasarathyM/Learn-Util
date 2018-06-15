@@ -58,6 +58,7 @@ namespace BasicUtil{
                     numberBuffer += digit;
             });
             index = numberBuffer.Count();
+            //To pack the numbers to its format, accordingly
             if (numberBuffer.Count() >= 10) {
                 index -= 4;
                 phoneNumber += numberBuffer.Substring(index, 4);
